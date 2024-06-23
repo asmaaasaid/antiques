@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Rose:wght@300..700&display=swap');
+:root
+{
+    --green-color:#2DA884;
+    --hover-color:#127b5d;
+    --icon-color:#292929;
+    --bg-color:#E4F4EF;
+}
+body
+{
+    font-family: "Red Rose", serif;
+}
+.nav-link
+{
+    color: black;
+}
+.nav-link:hover
+{
+    color: var(--hover-color);
+}
+.bg-header
+{
+    background-image: url('../images/3.jpeg');
+    background-size: cover;
+    background-position: center center;
+    height: 90vh;
+}
+.header-bg-color
+{
+    background-color: var(--green-color);
+    position: absolute;
+    top: 10%;
+    height: 70vh;
+}
+.heading-position{
+    transition: all 0.5s ease-in;
+}
+.bg-explore:hover .heading-position
+{
+   opacity: 1 !important;
+   background-color: rgba(0, 0, 0, 0.3);
+}
+.img-explore
+{
+    transition: all 0.5s 1s ease-in;
+}
+.bg-explore:hover .img-explore
+{
+    transform: scale(1.1);
+}
+.btn-green 
+{
+    background-color: var(--green-color);
+}
+.btn-green:hover
+{
+    background-color: var(--hover-color);
+}
+.position-icon
+{
+    top: 5%;
+    left: 75%;
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    transition: opacity 0.5s ease-in;
+}
+.arrival-img:hover .position-icon
+{
+    opacity: 1 !important;
+}
+.follow-antique
+{
+    background-color: var(--bg-color);
+}
+.follow-icon 
+{
+    color: var(--hover-color); 
+    cursor: pointer;
+}
+ul li
+{
+    transition:all 0.5s ease-in;
+    color: var(--green-color);
+    cursor: pointer;
+}
+ul li:hover
+{
+    color: var(--hover-color) !important;
+}
+.footer-section
+{
+    background-color: black;
+}
+
+
+@media screen and (max-width:992px)
+{
+    .icons
+    {
+        display: none;
+    }
+    .header-bg-color
+    {
+        top: 0;
+        right: 0;
+        left: 0;
+        height: auto !important;
+        text-align: center;
+    }
+    br
+    {
+        display: none;
+    }
+    .order-image
+    {
+        order: -1 !important;
+    }
+    .footer-section
+    {
+        text-align: center !important;
+    }
+    .footer-section img 
+    {
+        width: 80% !important;
+    }
+}
+@media screen and (max-width:567px)
+{
+    .arrival-media 
+    {
+        width: 50% !important;
+       
+       
+    }
+}
